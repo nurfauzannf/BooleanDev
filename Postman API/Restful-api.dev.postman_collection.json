@@ -1,0 +1,231 @@
+{
+	"info": {
+		"_postman_id": "327015a7-182e-410f-83fe-bc8998e076b4",
+		"name": "Restful-api.dev",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37450710"
+	},
+	"item": [
+		{
+			"name": "ListOfAllObject",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.restful-api.dev/objects",
+					"protocol": "https",
+					"host": [
+						"api",
+						"restful-api",
+						"dev"
+					],
+					"path": [
+						"objects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListOfObjectById",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.restful-api.dev/objects?id=ff808181912a2b8801912aa1ddda006f&id=ff808181912a2b8801912aa4d0e70072&id=ff808181912a2b8801912aa7d41e007b&id=ff808181912a2b8801912aaaca7a007e",
+					"protocol": "https",
+					"host": [
+						"api",
+						"restful-api",
+						"dev"
+					],
+					"path": [
+						"objects"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "ff808181912a2b8801912aa1ddda006f"
+						},
+						{
+							"key": "id",
+							"value": "ff808181912a2b8801912aa4d0e70072"
+						},
+						{
+							"key": "id",
+							"value": "ff808181912a2b8801912aa7d41e007b"
+						},
+						{
+							"key": "id",
+							"value": "ff808181912a2b8801912aaaca7a007e"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SingleObject",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.restful-api.dev/objects/ff808181912a2b8801912a826d9c0050",
+					"protocol": "https",
+					"host": [
+						"api",
+						"restful-api",
+						"dev"
+					],
+					"path": [
+						"objects",
+						"ff808181912a2b8801912a826d9c0050"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddObject",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"name\": \"Gaming Axioo Pongo MONSTER X\",\r\n   \"data\": {\r\n      \"year\": 2024,\r\n      \"price\": \"59.749.000\",\r\n      \"CPU model\": \"Intel® Core™ i9-14900HX\",\r\n      \"Graphics Card\" : \"NVIDIA® GeForce RTX ™ 4090 Laptop GPU 16GB GDDR6\",\r\n      \"RAM\" : \"32GB (16GB x 2 SODIMM DDR5 5200Mhz) up to 64GB Dual Channel\",\r\n      \"SSD size\" : \"2TB 1x 2280 M.2 PCIe Gen. 4x4 NVMe SSD\",\r\n      \"Display\" : \"WQHD (2560 x 1440); 16 inch (16:9) 240Hz 100% SRGB\",\r\n      \"Operating System\": \"Windows 11\"\r\n   }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.restful-api.dev/objects",
+					"protocol": "https",
+					"host": [
+						"api",
+						"restful-api",
+						"dev"
+					],
+					"path": [
+						"objects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateObject",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.restful-api.dev/objects/ff808181912a2b8801912aa4d0e70072",
+					"protocol": "https",
+					"host": [
+						"api",
+						"restful-api",
+						"dev"
+					],
+					"path": [
+						"objects",
+						"ff808181912a2b8801912aa4d0e70072"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdatePartially",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"name\": \"Apple MacBook Pro 16 (Updated Name)\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.restful-api.dev/objects/ff808181912a2b8801912a7de2890046",
+					"protocol": "https",
+					"host": [
+						"api",
+						"restful-api",
+						"dev"
+					],
+					"path": [
+						"objects",
+						"ff808181912a2b8801912a7de2890046"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteObject",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://api.restful-api.dev/objects/ff808181912a2b8801912a7c9d300043",
+					"protocol": "https",
+					"host": [
+						"api",
+						"restful-api",
+						"dev"
+					],
+					"path": [
+						"objects",
+						"ff808181912a2b8801912a7c9d300043"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
